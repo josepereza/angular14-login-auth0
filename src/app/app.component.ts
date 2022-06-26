@@ -9,7 +9,7 @@ import { AuthService } from '@auth0/auth0-angular';
 })
 export class AppComponent {
   title = 'angular14-login-auth0';
-
+user:any={}
   isAuthenticated: boolean;
 
   constructor(@Inject(DOCUMENT) private document: Document,
@@ -21,6 +21,13 @@ export class AppComponent {
     this.authService.isAuthenticated$.subscribe((success: boolean) => {
       this.isAuthenticated = success;
     });
+
+   
+      this.authService.user$.subscribe((success: any) => {
+        this.user = success;
+        console.log(success)
+      });
+    
   }
 
   public signOut(): void {
