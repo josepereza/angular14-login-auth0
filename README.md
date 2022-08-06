@@ -2,6 +2,7 @@
 ### tutorial: 
 * https://dev.to/rodrigokamada/authentication-using-the-auth0-to-an-angular-application-eg0
 * https://github.com/auth0/auth0-angular
+* https://www.youtube.com/watch?v=4uwV6Oq8dCY
 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.1.
